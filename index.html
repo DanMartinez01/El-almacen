@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacen de Carlos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="stripe">
+        <p class="stripe-text">ENVIOS GRATIS A TODO EL PAIS</p>
+    </div>
+    <nav class="navbar">
+        <div>
+            <img src="assets/logotienda.jpg" width="120" height="60" alt="Almacen de Carlos">
+        </div>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass" width="30" height="30"></i>
+        </div>
+        <div class="navbar-icons">
+            <img src="assets/contact.jpg" width="30" height="30" alt="Contacto">
+            <img src="assets/shoppingcart.jpg" width="30" height="30" alt="Carrito">
+        </div>
+    </nav>
+    <hr />
+    <div class="categories">
+        <p class="category-links">Promos</p>
+        <p class="category-links">Almacen</p>
+        <p class="category-links">Vinos</p>
+        <p class="category-links">Espumantes</p>
+        <p class="category-links">Whisky</p>
+        <p class="category-links">Destilados</p>
+        <p class="category-links">Cervezas</p>
+        <p class="category-links">Sin alcohol</p>
+        <p class="category-links">Solo en caba</p>
+    </div>
+    <div class="your-class">
+        <img src="assets/banner1.jpg" width="100%">
+        <img src="assets/banner2.jpg" width="100%">
+    </div>
+    <div class="product-categories">
+        <h1 class="categories-text-line"><span>Categorias destacadas</span> </h1>
+        <h4 class="categories-text"></h4>Descubri nuestros productos para festejar con amigos!</h4>
+        <h4 class="categories-text"></h4>Entra en cada categoria y elegi los mejores productos para armar el festejo
+        que te mereces</h4>
+    </div>
+    <div class="category-images">
+        <div>
+            <img src="assets/fiambres.jpg" class="category-img1">
+            <img src="assets/vinos.jpg" class="category-img2">
+            <br />
+            <img src="assets/helados.jpg" class="category-img3">
+            <img src="assets/cervezas.jpg" class="category-img4">
+        </div>
+    </div>
+    <div class="brands">
+        <h1 class="brands-line"><span>Nuestras marcas</span></h1>
+        <div class="brands-icons">
+            <img src="assets/1.jpg" class="brand-icon" alt="Paladini">
+            <img src="assets/2.jpg" class="brand-icon" alt="Lario">
+            <img src="assets/3.jpg" class="brand-icon" alt="Bocatti">
+            <img src="assets/4.jpg" class="brand-icon" alt="Luvianka">
+            <img src="assets/5.jpg" class="brand-icon" alt="Grasetto">
+            <img src="assets/6.jpg" class="brand-icon" alt="42">
+            <img src="assets/7.jpg" class="brand-icon" alt="Frutos del campo">
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.your-class').slick(
+            {
+                arrows: false,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            }
+        );
+    </script>
+    <script type="text/javascript">
+        $('.brands-icons').slick({
+            arrows: false,
+            infinite: false,
+            autoplay: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 500,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        }
+        );
+    </script>
+</body>
+
+</html>
