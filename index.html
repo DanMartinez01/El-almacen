@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27c5d7f0db.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,10 +20,10 @@
     </div>
     <nav class="navbar">
         <div>
-            <img src="assets/logotienda.jpg" width="120" height="60" alt="Almacen de Carlos">
+            <img src="assets/logotienda.jpg" class="main-logo" alt="Almacen de Carlos">
         </div>
         <div class="search-bar">
-            <i class="fa-solid fa-magnifying-glass" width="30" height="30"></i>
+            <!-- <i class="fa-solid fa-magnifying-glass" width="10" height="10"></i> -->
         </div>
         <div class="navbar-icons">
             <img src="assets/contact.jpg" width="30" height="30" alt="Contacto">
@@ -31,15 +32,20 @@
     </nav>
     <hr />
     <div class="categories">
-        <p class="category-links">Promos</p>
-        <p class="category-links">Almacen</p>
-        <p class="category-links">Vinos</p>
-        <p class="category-links">Espumantes</p>
-        <p class="category-links">Whisky</p>
-        <p class="category-links">Destilados</p>
-        <p class="category-links">Cervezas</p>
-        <p class="category-links">Sin alcohol</p>
-        <p class="category-links">Solo en caba</p>
+        <div class="navbar-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar-links">
+            <p class="category-links">Promos</p>
+            <p class="category-links">Almacen</p>
+            <p class="category-links">Vinos</p>
+            <p class="category-links">Espumantes</p>
+            <p class="category-links">Whisky</p>
+            <p class="category-links">Destilados</p>
+            <p class="category-links">Cervezas</p>
+            <p class="category-links">Sin alcohol</p>
+            <p class="category-links">Solo en caba</p>
+        </div>
     </div>
     <div class="your-class">
         <img src="assets/banner1.jpg" width="100%">
@@ -47,7 +53,7 @@
     </div>
     <div class="product-categories">
         <h1 class="categories-text-line"><span>Categorias destacadas</span></h1>
-        <h4 class="categories-text"></h4>Descubri nuestros productos para festejar con amigos!</h4>
+        <h4 class="categories-text"></h4>Descubri nuestros productos para festejar con amigos!
         <h4 class="categories-text"></h4>Entra en cada categoria y elegi los mejores productos para armar el festejo
         que te mereces</h4>
     </div>
@@ -72,7 +78,6 @@
             <img src="assets/7.jpg" class="brand-icon" alt="Frutos del campo">
         </div>
     </div>
-
     <!-- carousel -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -93,7 +98,7 @@
     <script type="text/javascript">
         $('.brands-icons').slick({
             arrows: false,
-            infinite: false,
+            infinite: true,
             autoplay: true,
             speed: 300,
             slidesToShow: 4,
@@ -127,6 +132,7 @@
         }
         );
     </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
