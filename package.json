@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "run build"
+    "build": "npm build"
   },
   "repository": {
     "type": "git",
